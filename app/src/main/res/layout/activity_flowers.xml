@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:background="@drawable/img"
+    tools:context=".Flowers">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/select_your_product"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_bouquet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bouquet" />
+
+        <RadioButton
+            android:id="@+id/radio_Garland"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/garland" />
+
+        <RadioButton
+            android:id="@+id/radio_Bangles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bangles" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_flowers"
+            android:layout_marginStart="4dp"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_rose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rose" />
+
+        <CheckBox
+            android:id="@+id/checkBox_lily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lily" />
+
+        <CheckBox
+            android:id="@+id/checkBox_tulip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tulip" />
+
+        <CheckBox
+            android:id="@+id/checkBox_marigold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/marigold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrement"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#DC9FCD"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:textSize="24sp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btn_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increment"
+            android:textStyle="bold"
+            android:backgroundTint="#DC9FCD"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/total_price_0"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place_order"
+        android:backgroundTint="#8BC34A"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/show_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:visibility="gone"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rate_app"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_not_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/not_now"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btn_rate_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="@string/rate_now"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/brightness"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        android:text="@string/level"
+        android:layout_marginBottom="4dp"
+        />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        />
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        >
+
+
+        <Switch
+            android:id="@+id/btn_switch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/adaptive_brightness"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

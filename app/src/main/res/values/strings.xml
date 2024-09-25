@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FlowerShop</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="rating_0_0">Rating: 0.0</string>
+    <string name="select_your_product">Select your product</string>
+    <string name="bouquet">Bouquet</string>
+    <string name="garland">Garland</string>
+    <string name="bangles">Bangles</string>
+    <string name="select_flowers">Select Flowers</string>
+    <string name="rose">Rose</string>
+    <string name="adaptive_brightness">Adaptive Brightness</string>
+    <string name="level">Level</string>
+    <string name="brightness">Brightness</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="not_now">Not Now</string>
+    <string name="rate_app">Do you want to rate our app?</string>
+    <string name="place_order">Place Order</string>
+    <string name="total_price_0">Total Price: $0</string>
+    <string name="increment">+</string>
+    <string name="zero">0</string>
+    <string name="decrement">-</string>
+    <string name="lily">Lily</string>
+    <string name="tulip">Tulip</string>
+    <string name="marigold">Marigold</string>
+</resources>
